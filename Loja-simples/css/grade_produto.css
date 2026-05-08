@@ -1,0 +1,143 @@
+/* ==================================================
+   CONTAINER DOS PRODUTOS
+================================================== */
+
+.produtos-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ==================================================
+   GRADE DE PRODUTOS
+================================================== */
+
+.grade-produtos {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* REMOVE SCROLLBAR */
+
+.grade-produtos::-webkit-scrollbar {
+  display: none;
+}
+
+/* ==================================================
+   CARTÃO
+================================================== */
+
+.cartao-produto {
+  min-width: 260px;
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.cartao-produto:hover {
+  transform: translateY(-5px);
+}
+
+/* ==================================================
+   ÁREA DA IMAGEM
+================================================== */
+
+.cartao-produto__midia {
+  height: 220px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cartao-produto__icone {
+  font-size: 4rem;
+}
+
+/* ==================================================
+   CORPO DO CARD
+================================================== */
+
+.cartao-produto__corpo {
+  padding: 20px;
+}
+
+.cartao-produto__categoria {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.cartao-produto__nome {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.cartao-produto__rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cartao-produto__preco {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cartao-produto__preco--antigo {
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: line-through;
+}
+
+/* ==================================================
+   SOBREPOSIÇÃO
+================================================== */
+
+.cartao-produto__sobreposicao {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cartao-produto:hover .cartao-produto__sobreposicao {
+  opacity: 1;
+}
+
+/* ==================================================
+   BOTÕES DAS SETAS
+================================================== */
+
+.seta {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #e8ff00;
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+
+.seta:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
