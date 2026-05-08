@@ -1,4 +1,11 @@
 /* BOTÕES */
+.grade-botao {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: center;
+}
+
 .botao {
   display: inline-block;
   font-family: 'DM Sans', sans-serif;
@@ -11,6 +18,7 @@
   cursor: pointer;
   padding: 16px 40px;
   transition: background 0.2s, color 0.2s, transform 0.2s;
+  border-radius:20px;
 }
 
 .botao--primario {
