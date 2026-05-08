@@ -1,44 +1,75 @@
-/* GRADE DE PRODUTOS */
-.grade-produtos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+/* ==================================================
+   CONTAINER DOS PRODUTOS
+================================================== */
+
+.produtos-container {
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
 
-.cartao-produto {
-  background: #111;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s;
-  border-radius:20px;
-  box-shadow:0 15px 35px rgba(0,0,0,0.2);
+/* ==================================================
+   GRADE DE PRODUTOS
+================================================== */
+
+.grade-produtos {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  width: 100%;
 }
 
-.cartao-produto:hover { 
-  transform: translateY(-4px); 
+/* REMOVE SCROLLBAR */
+
+.grade-produtos::-webkit-scrollbar {
+  display: none;
 }
+
+/* ==================================================
+   CARTÃO
+================================================== */
+
+.cartao-produto {
+  min-width: 260px;
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.cartao-produto:hover {
+  transform: translateY(-5px);
+}
+
+/* ==================================================
+   ÁREA DA IMAGEM
+================================================== */
 
 .cartao-produto__midia {
-  aspect-ratio: 1;
+  height: 220px;
+  background: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1a1a1a;
   position: relative;
-  overflow: hidden;
 }
 
 .cartao-produto__icone {
-  font-size: 4.5rem;
-  position: relative;
-  z-index: 1;
-  transition: transform 0.3s;
+  font-size: 4rem;
 }
 
 .cartao-produto:hover .cartao-produto__icone { 
   transform: scale(1.08); 
 }
+
+/* ==================================================
+   CORPO DO CARD
+================================================== */
 
 .cartao-produto__corpo {
   padding: 20px;
@@ -48,6 +79,10 @@
 .cartao-produto:hover .cartao-produto__corpo {
   opacity: 1;
 }
+
+/* ==================================================
+   OVERLAY
+================================================== */
 
 .cartao-produto__overlay {
   position: absolute;
@@ -67,6 +102,10 @@
 .cartao-produto:hover .cartao-produto__overlay {
   opacity: 1;
 }
+
+/* ==================================================
+   SOBREPOSIÇÃO
+================================================== */
 
 .cartao-produto__sobreposicao {
   position: absolute;
@@ -103,34 +142,34 @@
 }
 
 .cartao-produto__categoria {
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
+  font-size: 0.7rem;
   text-transform: uppercase;
   color: #666;
   margin-bottom: 8px;
+  letter-spacing: 1px;
 }
 
 .cartao-produto__nome {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.3rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 12px;
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
 }
 
 .cartao-produto__rodape {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .cartao-produto__preco {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #f0f0f0;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .cartao-produto__preco--antigo {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #666;
   text-decoration: line-through;
   margin-left: 8px;
@@ -140,7 +179,7 @@
   opacity: 0;
 }
 
-.cartao-produto:hover .cartao-produto__corpo .cartao-produto__nome{
+.cartao-produto:hover .cartao-produto__corpo .cartao-produto__nome {
   opacity: 0;
 }
 
@@ -150,4 +189,26 @@
 
 .cartao-produto:hover .cartao-produto__corpo .cartao-produto__preco {
   opacity: 0;
+}
+
+/* ==================================================
+   BOTÕES DAS SETAS
+================================================== */
+
+.seta {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #e8ff00;
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+
+.seta:hover {
+  background: #fff;
+  transform: scale(1.05);
 }
