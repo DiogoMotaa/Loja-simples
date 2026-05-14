@@ -1,0 +1,199 @@
+[
+  {
+    "icone": "🎧",
+    "categoria": "Componantes",
+    "nome": "Headset Pro 7.1",
+    "preco": "R$ 459,90",
+    "precoAntigo": "R$ 679,90",
+    "desconto": "25% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+        "texto": "Ver mais",
+        "href": "./login/"
+      }
+    ]
+  },
+  {
+    "icone": "💻",
+    "categoria": "Computador",
+    "nome": "Positivo Vision",
+    "preco": "R$ 2.849,00",
+    "precoAntigo": "R$ 3.750,00",
+    "desconto": "25% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "📱",
+    "categoria": "Celular",
+    "nome": "Smartphone Z15",
+    "preco": "R$ 1.875,00",
+    "precoAntigo": "R$ 2.500,00",
+    "desconto": "25% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "🖥️",
+    "categoria": "Componantes",
+    "nome": "Monitor 4K 144Hz",
+    "preco": "R$ 2.099,00",
+    "precoAntigo": "R$ 2.800,00",
+    "desconto": "25% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "⌨️",
+    "categoria": "Componantes",
+    "nome": "Teclado RGB X",
+    "preco": "R$ 389,90",
+    "precoAntigo": "R$ 760,00",
+    "desconto": "18% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "🖱️",
+    "categoria": "Componantes",
+    "nome": "Mouse Gamer Pro",
+    "preco": "R$ 179",
+    "precoAntigo": "R$ 250",
+    "desconto": "15% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "🎮",
+    "categoria": "Games",
+    "nome": "Controle X-Pro",
+    "preco": "R$ 520,00",
+    "precoAntigo": "R$ 670,00",
+    "desconto": "20% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "💺",
+    "categoria": "Games",
+    "nome": "Cadeira Elite",
+    "preco": "R$ 999,00",
+    "precoAntigo": "R$ 1.299,00",
+    "desconto": "12% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "🗄️",
+    "categoria": "Componantes",
+    "nome": "Gabinete Gamer",
+    "preco": "R$ 590,00",
+    "precoAntigo": "R$ 980,00",
+    "desconto": "10% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "📷",
+    "categoria": "Componantes",
+    "nome": "Webcam HD",
+    "preco": "R$ 590,00",
+    "precoAntigo": "R$ 750,00",
+    "desconto": "8% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "🕹️",
+    "categoria": "Games",
+    "nome": "Arcade Mini",
+    "preco": "R$ 2.150,00",
+    "precoAntigo": "R$ 2.690,00",
+    "desconto": "17% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "💾",
+    "categoria": "Componantes",
+    "nome": "SSD 1TB",
+    "preco": "R$ 1.250,00",
+    "precoAntigo": "R$ 1.350,00",
+    "desconto": "14% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "📡",
+    "categoria": "Componantes",
+    "nome": "Roteador AX",
+    "preco": "R$ 590,00",
+    "precoAntigo": "R$ 890,00",
+    "desconto": "13% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "🔋",
+    "categoria": "Celular",
+    "nome": "PowerBank Pro",
+    "preco": "R$ 1.250,00",
+    "precoAntigo": "R$ 1.769,90",
+    "desconto": "10% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  },
+  {
+    "icone": "⌚",
+    "categoria": "Acessorios",
+    "nome": "Watch Gamer",
+    "preco": "R$ 1.190,00",
+    "precoAntigo": "R$ 1.350,00",
+    "desconto": "21% off",
+    "destaque": "Novo",
+    "acoes": [
+      {
+      }
+    ]
+  }
+]
