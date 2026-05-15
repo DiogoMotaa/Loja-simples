@@ -1,34 +1,36 @@
 /* 
-==========================================================================
-   BLOCO: CATEGORY CARD  (.category-card)
+=========================================================================
    Cards de categoria com ícone, nome e quantidade de produtos.
-   A seta ↗ se move no hover indicando navegação.
-========================================================================== 
+=========================================================================
 */
 
-/* Grid de categorias: 3 colunas */
+
 .categoria-grade {
   display:               grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap:                   10px;
 }
 
-/* Card de categoria: comporta-se como link (tag <a>) */
+
+
+/* SEPARAÇÃO VISUAL */
+
+
 .categoria-cartao {
   background:      var(--color-surface);
   padding:         var(--space-12) var(--space-9);
-  position:        relative; /* Para a seta e texto de fundo serem posicionados */
+  position:        relative; 
   overflow:        hidden;
   cursor:          pointer;
-  text-decoration: none;  /* Remove sublinhado do link */
-  color:           inherit; /* Herda a cor do texto pai (sem o azul padrão de links) */
-  display:         block;   /* Ocupa toda a célula do grid */
+  text-decoration: none;  
+  color:           inherit; 
+  display:         block;   
   transition:      background var(--transition-slow);
 }
 
 .categoria-cartao:hover { background: var(--color-surface-2); }
 
-/* Move a seta na diagonal no hover — feedback visual de navegação */
+/* Move a seta na diagonal*/
 .categoria-cartao:hover .categoria-cartao__flecha {
   transform: translate(4px, -4px);
 }
@@ -36,7 +38,7 @@
 .categoria-cartao__icone {
   font-size:     3rem;
   margin-bottom: var(--space-5);
-  display:       block; /* Garante que o margin-bottom funcione */
+  display:       block; 
 }
 
 .categoria-cartao__name {
@@ -52,7 +54,7 @@
   letter-spacing: var(--tracking-wide);
 }
 
-/* Seta posicionada no canto superior direito */
+/* SETA no canto superior direito */
 .categoria-cartao__flecha {
   position:   absolute;
   top:        var(--space-9);
@@ -62,7 +64,7 @@
   transition: transform var(--transition-slow);
 }
 
-/* Texto decorativo gigante no fundo do card — quase invisível */
+/* Texto decorativo gigante no fundo*/
 .categoria-cartao__grandetexto {
   position:       absolute;
   bottom:         -10px;
