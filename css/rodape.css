@@ -1,33 +1,185 @@
-div.redes-sociais {
-    margin-top: 10px;
+
+/* ----------------------------------------------------------
+   CONTAINER PRINCIPAL RODAPÉ
+---------------------------------------------------------- */
+footer {
+    background-color: #000;
+    border-top: 2px solid #DFFF00;
+    color: #aaa;                    /* Cinza claro como cor padrão do texto */
+    font-family: 'DM Sans', sans-serif;
+    padding: 60px 48px 30px;
 }
 
-div.redes-sociais a {
-    color: #ccff00; 
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+
+
+.rodape__grade {
+    display: flex;
+    flex-wrap: wrap;               
+    gap: 48px;
+    justify-content: space-between;
+    margin-bottom: 48px;
 }
 
-a:hover {
-    text-decoration: underline;
+
+
+.rodape__coluna {
+    flex: 1 1 180px;
 }
 
-a{
-    color: #ccff00; 
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
+
+
+.rodape__marca {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    color: #DFFF00;                
+    margin-bottom: 12px;
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
+
+
+.rodape__sobre {
+    font-size: 0.85rem;
+    line-height: 1.8;
+    color: #777;                   
+    max-width: 260px;
+}
+
+
+
+.rodape__titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    left: 0;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #222; 
 }
 
+
+
+.rodape__lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* ----------------------------------------------------------
+   
+
+LINKS DO RODAPÉ
+   
+---------------------------------------------------------- */
+.rodape__link {
+    color: #777;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    display: inline-block;
+}
+
+.rodape__link:hover {
+    color: #DFFF00;                
+    padding-left: 6px;             
+}
+
+
+/* ----------------------------------------------------------
+   
+LINKS DE REDES SOCIAIS
+
+---------------------------------------------------------- */
+.rodape__redes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+/* ----------------------------------------------------------
+   
+SEPARAÇÃO VISUAL
+   
+---------------------------------------------------------- */
+.rodape__rede {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 40px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #777;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease,
+                border-color 0.2s ease,
+                background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.rodape__rede:hover {
+    color: #DFFF00;
+    border-color: #DFFF00;
+    background-color: rgba(223, 255, 0, 0.06); 
+    transform: translateY(-2px);               
+}
+
+
+/* ----------------------------------------------------------
+   
+LINHA INFERIOR — 
+   
+---------------------------------------------------------- */
+.rodape__base {
+    border-top: 1px solid #1a1a1a;
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 0.75rem;
+    color: #444;
+}
+
+.rodape__base a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.rodape__base a:hover {
+    color: #DFFF00;
+}
+
+
+/* ----------------------------------------------------------
+
+   SEPARAÇÃO VISUAL 
+
+---------------------------------------------------------- */
+@media (max-width: 600px) {
+
+    footer {
+        padding: 40px 24px 24px;
+    }
+
+    .rodape__grade {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .rodape__base {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

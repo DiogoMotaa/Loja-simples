@@ -1,17 +1,9 @@
-/* ==================================================
-   CONTAINER DOS PRODUTOS
-================================================== */
-
 .produtos-container {
   display: flex;
   align-items: center;
   gap: 10px;
   width: 100%;
 }
-
-/* ==================================================
-   GRADE DE PRODUTOS
-================================================== */
 
 .grade-produtos {
   display: flex;
@@ -22,15 +14,9 @@
   width: 100%;
 }
 
-/* REMOVE SCROLLBAR */
-
 .grade-produtos::-webkit-scrollbar {
   display: none;
 }
-
-/* ==================================================
-   CARTÃO
-================================================== */
 
 .cartao-produto {
   min-width: 250px;
@@ -47,10 +33,6 @@
   transform: translateY(-5px);
 }
 
-/* ==================================================
-   ÁREA DA IMAGEM
-================================================== */
-
 .cartao-produto__midia {
   height: 220px;
   background: #1a1a1a;
@@ -64,82 +46,14 @@
   font-size: 4rem;
 }
 
-.cartao-produto:hover .cartao-produto__icone { 
-  transform: scale(1.08); 
+.cartao-produto:hover .cartao-produto__icone {
+  transform: scale(1.08);
 }
-
-/* ==================================================
-   CORPO DO CARD
-================================================== */
 
 .cartao-produto__corpo {
   padding: 20px;
   position: relative;
-}
-
-.cartao-produto:hover .cartao-produto__corpo {
-  opacity: 1;
-}
-
-/* ==================================================
-   OVERLAY
-================================================== */
-
-.cartao-produto__overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-  pointer-events: auto;
-  width: 90%;
-  height: 90%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cartao-produto:hover .cartao-produto__overlay {
-  opacity: 1;
-}
-
-/* ==================================================
-   SOBREPOSIÇÃO
-================================================== */
-
-.cartao-produto__sobreposicao {
-  position: absolute;
-  inset: 0;
-  background: #0a0a0a;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 20px;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.cartao-produto:hover .cartao-produto__sobreposicao { 
-  opacity: 1; 
-}
-
-.cartao-produto__sobreposicao-botao {
-  background: #e8ff00;
-  color: #000;
-  border: none;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 10px 24px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.cartao-produto__sobreposicao-botao:hover { 
-  background: #fff; 
+  overflow: hidden;
 }
 
 .cartao-produto__categoria {
@@ -148,6 +62,7 @@
   color: #666;
   margin-bottom: 8px;
   letter-spacing: 1px;
+  transition: opacity 0.25s ease;
 }
 
 .cartao-produto__nome {
@@ -155,6 +70,7 @@
   font-size: 1.7rem;
   margin-bottom: 15px;
   letter-spacing: 1px;
+  transition: opacity 0.25s ease;
 }
 
 .cartao-produto__rodape {
@@ -167,6 +83,7 @@
 .cartao-produto__preco {
   font-size: 1.2rem;
   font-weight: bold;
+  transition: opacity 0.25s ease;
 }
 
 .cartao-produto__preco--antigo {
@@ -176,25 +93,10 @@
   margin-left: 8px;
 }
 
-.cartao-produto:hover .cartao-produto__corpo .cartao-produto__categoria {
-  opacity: 0;
-}
-
-.cartao-produto:hover .cartao-produto__corpo .cartao-produto__nome {
-  opacity: 0;
-}
-
-.cartao-produto:hover .cartao-produto__corpo .etiqueta {
-  opacity: 0;
-}
-
-.cartao-produto:hover .cartao-produto__corpo .cartao-produto__preco {
-  opacity: 0;
-}
-
-/* ==================================================
-   BOTÕES DAS SETAS
-================================================== */
+.cartao-produto:hover .cartao-produto__corpo .cartao-produto__categoria { opacity: 0; }
+.cartao-produto:hover .cartao-produto__corpo .cartao-produto__nome      { opacity: 0; }
+.cartao-produto:hover .cartao-produto__corpo .etiqueta                  { opacity: 0; }
+.cartao-produto:hover .cartao-produto__corpo .cartao-produto__preco     { opacity: 0; }
 
 .seta {
   width: 45px;
@@ -212,22 +114,4 @@
 .seta:hover {
   background: #fff;
   transform: scale(1.05);
-}
-
-/* ==================================================
-   RESPONSIVO
-================================================== */
-
-@media (max-width: 600px) {
-
-  .produtos-container {
-    gap: 8px;
-  }
-
-  .seta {
-    width: 38px;
-    height: 38px;
-    font-size: 16px;
-  }
-
 }
