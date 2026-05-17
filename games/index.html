@@ -45,6 +45,7 @@
         </div>
         <button class="barra-nav__botao-icone">🛒</button>
         <a href="../login/" class="botao botao--entrar">Entrar</a>
+        <a id="btnVoltar" class="botao botao--entrar">Voltar</a>
       </div>
     </nav>
   </header>
@@ -251,14 +252,15 @@
     </div>
     <div class="rodape__base">
       <span>© 2026 Technoblade. Todos os direitos reservados.</span>
-      <span>
-        <a href="../login/">Entrar</a> &nbsp;·&nbsp;
-        <a href="../cadastro/">Cadastrar-se</a>
-      </span>
     </div>
   </footer>
 
   <script src="../js/busca.js"></script>
+  <script>
+    document.getElementById("btnVoltar").addEventListener("click", () => {
+    history.back();
+    });
+  </script>
 
 </body>
 

@@ -1,3 +1,34 @@
+/* ANIMAÇÃO RGB */
+@keyframes rgb-border {
+  0%   { border-bottom-color: rgb(255, 0, 0); }
+  17%  { border-bottom-color: rgb(255, 165, 0); }
+  33%  { border-bottom-color: rgb(255, 255, 0); }
+  50%  { border-bottom-color: rgb(0, 255, 0); }
+  67%  { border-bottom-color: rgb(0, 0, 255); }
+  83%  { border-bottom-color: rgb(148, 0, 211); }
+  100% { border-bottom-color: rgb(255, 0, 0); }
+}
+
+@keyframes rgb-glow {
+  0%   { box-shadow: 0 2px 20px rgba(255, 0, 0, 0.3); }
+  17%  { box-shadow: 0 2px 20px rgba(255, 165, 0, 0.3); }
+  33%  { box-shadow: 0 2px 20px rgba(255, 255, 0, 0.3); }
+  50%  { box-shadow: 0 2px 20px rgba(0, 255, 0, 0.3); }
+  67%  { box-shadow: 0 2px 20px rgba(0, 0, 255, 0.3); }
+  83%  { box-shadow: 0 2px 20px rgba(148, 0, 211, 0.3); }
+  100% { box-shadow: 0 2px 20px rgba(255, 0, 0, 0.3); }
+}
+
+@keyframes rgb-text {
+  0%   { color: rgb(255, 0, 0); }
+  17%  { color: rgb(255, 165, 0); }
+  33%  { color: rgb(255, 255, 0); }
+  50%  { color: rgb(0, 255, 0); }
+  67%  { color: rgb(0, 0, 255); }
+  83%  { color: rgb(148, 0, 211); }
+  100% { color: rgb(255, 0, 0); }
+}
+
 /* BARRA DE NAVEGAÇÃO */
 .barra-nav {
   position: fixed;
@@ -6,18 +37,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 10px 20px;
   background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid #222;
+  border-bottom: 2px solid;
+  animation: rgb-border 3s linear infinite, rgb-glow 3s linear infinite;
 }
 
 .barra-nav__logo {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2rem;
   letter-spacing: 0.1em;
-  color: #e8ff00;
   text-decoration: none;
+  animation: rgb-text 3s linear infinite;
 }
 
 .barra-nav__menu {
@@ -54,10 +86,7 @@
   transition: color 0.2s;
 }
 
-.barra-nav__botao-icone:hover{
+.barra-nav__botao-icone:hover {
+  color: #f0f0f0;
   transform: translateY(-2px);
-}
-
-.barra-nav__botao-icone:hover { 
-  color: #f0f0f0; 
 }

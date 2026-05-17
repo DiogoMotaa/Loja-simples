@@ -41,3 +41,16 @@
 .overlay__btn:hover {
   transform: scale(1.05);
 }
+
+.overlay__btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  background: #cfcfcf;
+  color: #666;
+}
+
+.overlay__btn:disabled:hover {
+  transform: none;
+  background: #cfcfcf;
+}
