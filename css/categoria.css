@@ -1,0 +1,78 @@
+/* 
+=========================================================================
+   Cards de categoria com ícone, nome e quantidade de produtos.
+=========================================================================
+*/
+
+
+.categoria-grade {
+  display:               grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap:                   10px;
+}
+
+
+
+/* SEPARAÇÃO VISUAL */
+
+
+.categoria-cartao {
+  background:      var(--color-surface);
+  padding:         var(--space-12) var(--space-9);
+  position:        relative; 
+  overflow:        hidden;
+  cursor:          pointer;
+  text-decoration: none;  
+  color:           inherit; 
+  display:         block;   
+  transition:      background var(--transition-slow);
+}
+
+.categoria-cartao:hover { background: var(--color-surface-2); }
+
+/* Move a seta na diagonal*/
+.categoria-cartao:hover .categoria-cartao__flecha {
+  transform: translate(4px, -4px);
+}
+
+.categoria-cartao__icone {
+  font-size:     3rem;
+  margin-bottom: var(--space-5);
+  display:       block; 
+}
+
+.categoria-cartao__name {
+  font-family:    var(--font-display);
+  font-size:      var(--text-3xl);
+  letter-spacing: var(--tracking-normal);
+  margin-bottom:  var(--space-2);
+}
+
+.categoria-cartao__count {
+  font-size:      var(--text-xs);
+  color:          var(--color-muted);
+  letter-spacing: var(--tracking-wide);
+}
+
+/* SETA no canto superior direito */
+.categoria-cartao__flecha {
+  position:   absolute;
+  top:        var(--space-9);
+  right:      var(--space-9);
+  font-size:  1.5rem;
+  color:      var(--color-muted);
+  transition: transform var(--transition-slow);
+}
+
+/* Texto decorativo gigante no fundo*/
+.categoria-cartao__grandetexto {
+  position:       absolute;
+  bottom:         -10px;
+  right:          10px;
+  font-family:    var(--font-display);
+  font-size:      5rem;
+  color:          rgba(255,255,255,0.02);
+  user-select:    none;
+  pointer-events: none;
+  line-height:    1;
+}

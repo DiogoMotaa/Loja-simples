@@ -1,0 +1,117 @@
+.produtos-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.grade-produtos {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: 100%;
+}
+
+.grade-produtos::-webkit-scrollbar {
+  display: none;
+}
+
+.cartao-produto {
+  min-width: 250px;
+  background: #111;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.3s;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.cartao-produto:hover {
+  transform: translateY(-5px);
+}
+
+.cartao-produto__midia {
+  height: 220px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cartao-produto__icone {
+  font-size: 4rem;
+}
+
+.cartao-produto:hover .cartao-produto__icone {
+  transform: scale(1.08);
+}
+
+.cartao-produto__corpo {
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cartao-produto__categoria {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  transition: opacity 0.25s ease;
+}
+
+.cartao-produto__nome {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  transition: opacity 0.25s ease;
+}
+
+.cartao-produto__rodape {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cartao-produto__preco {
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: opacity 0.25s ease;
+}
+
+.cartao-produto__preco--antigo {
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+.cartao-produto:hover .cartao-produto__corpo .cartao-produto__categoria { opacity: 0; }
+.cartao-produto:hover .cartao-produto__corpo .cartao-produto__nome      { opacity: 0; }
+.cartao-produto:hover .cartao-produto__corpo .etiqueta                  { opacity: 0; }
+.cartao-produto:hover .cartao-produto__corpo .cartao-produto__preco     { opacity: 0; }
+
+.seta {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background: #e8ff00;
+  color: #000;
+  font-size: 22px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+
+.seta:hover {
+  background: #fff;
+  transform: scale(1.05);
+}

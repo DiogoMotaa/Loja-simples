@@ -1,0 +1,43 @@
+.cartao-produto__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  pointer-events: none;
+}
+
+.cartao-produto:hover .cartao-produto__corpo .cartao-produto__overlay {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.overlay__botoes {
+  display: flex;
+  gap: 8px;
+  width: 90%;
+}
+
+.overlay__btn {
+  flex: 1;
+  padding: 10px 5px;
+  background: #DFFF00;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.overlay__btn:hover {
+  transform: scale(1.05);
+}

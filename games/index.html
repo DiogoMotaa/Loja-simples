@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<!-- 
+  Essa é uma separação visual pois
+  tenho Problemas com a visão
+-->
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technoblade - Games</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/barra_nav.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/botao.css">
+  <link rel="stylesheet" href="../css/categoria.css">
+  <link rel="stylesheet" href="../css/etiqueta.css">
+  <link rel="stylesheet" href="../css/grade_produto.css">
+  <link rel="stylesheet" href="../css/secao.css">
+  <link rel="stylesheet" href="../css/rodape.css">
+  <link rel="stylesheet" href="../css/busca.css">
+  <link rel="stylesheet" href="../css/overlay_produto.css">
+</head>
+
+
+<!-- 
+  Essa é uma separação visual pois
+  tenho Problemas com a visão
+-->
+
+
+<body>
+
+  <header>
+    <nav class="barra-nav">
+      <a href="../" class="barra-nav__logo">Technoblade</a>
+      <div class="barra-nav__acoes">
+        <div class="busca__wrapper">
+          <button class="barra-nav__botao-icone" id="btnLupa" aria-label="Buscar">🔍</button>
+          <input type="text" class="busca__input" id="inputBusca" placeholder="Buscar produtos...">
+          <div class="busca__sugestoes" id="listaSugestoes"></div>
+        </div>
+        <button class="barra-nav__botao-icone">🛒</button>
+        <a href="../login/" class="botao botao--entrar">Entrar</a>
+      </div>
+    </nav>
+  </header>
+
+
+<!-- 
+  Essa é uma separação visual pois
+  tenho Problemas com a visão
+-->
+
+
+  <section class="secao" id="games">
+
+    <div class="secao__cabecalho">
+      <h3 class="secao__titulo secao__titulo--h3">Games</h3>
+    </div>
+
+    <div class="grade-produtos">
+
+      <!-- PRODUTO 1 -->
+      <article class="cartao-produto">
+        <span class="etiqueta etiqueta--destaque etiqueta--absoluta">Novo</span>
+        <div class="cartao-produto__midia">
+          <span class="cartao-produto__icone">🎮</span>
+        </div>
+        <div class="cartao-produto__corpo">
+          <div class="cartao-produto__overlay">
+            <div class="overlay__botoes">
+              <button class="overlay__btn" onclick="window.location.href='../especificacoes.html?produto=controle-pro-x'">Especificações</button>
+              <button class="overlay__btn">+ Carrinho</button>
+            </div>
+          </div>
+          <div class="cartao-produto__categoria">Games</div>
+          <div class="cartao-produto__nome">Controle Pro X</div>
+          <div class="cartao-produto__rodape">
+            <span class="cartao-produto__preco">R$ 319</span>
+            <span class="cartao-produto__preco cartao-produto__preco--antigo">R$ 429</span>
+          </div>
+          <span class="etiqueta etiqueta--perigo">20% off</span>
+        </div>
+      </article>
+
+      <!-- PRODUTO 2 -->
+      <article class="cartao-produto">
+        <span class="etiqueta etiqueta--destaque etiqueta--absoluta">Novo</span>
+        <div class="cartao-produto__midia">
+          <span class="cartao-produto__icone">🕹️</span>
+        </div>
+        <div class="cartao-produto__corpo">
+          <div class="cartao-produto__overlay">
+            <div class="overlay__botoes">
+              <button class="overlay__btn" onclick="window.location.href='../especificacoes.html?produto=arcade-mini'">Especificações</button>
+              <button class="overlay__btn">+ Carrinho</button>
+            </div>
+          </div>
+          <div class="cartao-produto__categoria">Games</div>
+          <div class="cartao-produto__nome">Arcade Mini</div>
+          <div class="cartao-produto__rodape">
+            <span class="cartao-produto__preco">R$ 499</span>
+            <span class="cartao-produto__preco cartao-produto__preco--antigo">R$ 699</span>
+          </div>
+          <span class="etiqueta etiqueta--perigo">28% off</span>
+        </div>
+      </article>
+
+      <!-- PRODUTO 3 -->
+      <article class="cartao-produto">
+        <span class="etiqueta etiqueta--destaque etiqueta--absoluta">Novo</span>
+        <div class="cartao-produto__midia">
+          <span class="cartao-produto__icone">⌨️</span>
+        </div>
+        <div class="cartao-produto__corpo">
+          <div class="cartao-produto__overlay">
+            <div class="overlay__botoes">
+              <button class="overlay__btn" onclick="window.location.href='../especificacoes.html?produto=teclado-mecanico-x'">Especificações</button>
+              <button class="overlay__btn">+ Carrinho</button>
+            </div>
+          </div>
+          <div class="cartao-produto__categoria">Games</div>
+          <div class="cartao-produto__nome">Teclado Mecânico X</div>
+          <div class="cartao-produto__rodape">
+            <span class="cartao-produto__preco">R$ 279</span>
+            <span class="cartao-produto__preco cartao-produto__preco--antigo">R$ 399</span>
+          </div>
+          <span class="etiqueta etiqueta--perigo">15% off</span>
+        </div>
+      </article>
+
+      <!-- PRODUTO 4 -->
+      <article class="cartao-produto">
+        <span class="etiqueta etiqueta--destaque etiqueta--absoluta">Novo</span>
+        <div class="cartao-produto__midia">
+          <span class="cartao-produto__icone">🖱️</span>
+        </div>
+        <div class="cartao-produto__corpo">
+          <div class="cartao-produto__overlay">
+            <div class="overlay__botoes">
+              <button class="overlay__btn" onclick="window.location.href='../especificacoes.html?produto=mouse-rgb-fury'">Especificações</button>
+              <button class="overlay__btn">+ Carrinho</button>
+            </div>
+          </div>
+          <div class="cartao-produto__categoria">Games</div>
+          <div class="cartao-produto__nome">Mouse RGB Fury</div>
+          <div class="cartao-produto__rodape">
+            <span class="cartao-produto__preco">R$ 189</span>
+            <span class="cartao-produto__preco cartao-produto__preco--antigo">R$ 259</span>
+          </div>
+          <span class="etiqueta etiqueta--perigo">18% off</span>
+        </div>
+      </article>
+
+      <!-- PRODUTO 5 -->
+      <article class="cartao-produto">
+        <span class="etiqueta etiqueta--destaque etiqueta--absoluta">Novo</span>
+        <div class="cartao-produto__midia">
+          <span class="cartao-produto__icone">🪑</span>
+        </div>
+        <div class="cartao-produto__corpo">
+          <div class="cartao-produto__overlay">
+            <div class="overlay__botoes">
+              <button class="overlay__btn" onclick="window.location.href='../especificacoes.html?produto=cadeira-gamer-pro'">Especificações</button>
+              <button class="overlay__btn">+ Carrinho</button>
+            </div>
+          </div>
+          <div class="cartao-produto__categoria">Games</div>
+          <div class="cartao-produto__nome">Cadeira Gamer Pro</div>
+          <div class="cartao-produto__rodape">
+            <span class="cartao-produto__preco">R$ 1.299</span>
+            <span class="cartao-produto__preco cartao-produto__preco--antigo">R$ 1.599</span>
+          </div>
+          <span class="etiqueta etiqueta--perigo">10% off</span>
+        </div>
+      </article>
+
+      <!-- PRODUTO 6 -->
+      <article class="cartao-produto">
+        <span class="etiqueta etiqueta--destaque etiqueta--absoluta">Novo</span>
+        <div class="cartao-produto__midia">
+          <span class="cartao-produto__icone">🎧</span>
+        </div>
+        <div class="cartao-produto__corpo">
+          <div class="cartao-produto__overlay">
+            <div class="overlay__botoes">
+              <button class="overlay__btn" onclick="window.location.href='../especificacoes.html?produto=headset-storm-71'">Especificações</button>
+              <button class="overlay__btn">+ Carrinho</button>
+            </div>
+          </div>
+          <div class="cartao-produto__categoria">Games</div>
+          <div class="cartao-produto__nome">Headset Storm 7.1</div>
+          <div class="cartao-produto__rodape">
+            <span class="cartao-produto__preco">R$ 349</span>
+            <span class="cartao-produto__preco cartao-produto__preco--antigo">R$ 499</span>
+          </div>
+          <span class="etiqueta etiqueta--perigo">22% off</span>
+        </div>
+      </article>
+
+    </div>
+
+  </section>
+
+
+<!-- 
+  Essa é uma separação visual pois
+  tenho Problemas com a visão
+-->
+
+
+  <footer>
+    <div class="rodape__grade">
+      <div class="rodape__coluna">
+        <div class="rodape__marca">Technoblade</div>
+        <p class="rodape__sobre">
+          Especialistas em periféricos gamers, computadores
+          e acessórios de alta performance. Qualidade e os
+          melhores preços para jogadores de verdade.
+        </p>
+      </div>
+      <div class="rodape__coluna">
+        <div class="rodape__titulo">Links Rápidos</div>
+        <ul class="rodape__lista">
+          <li><a href="../"               class="rodape__link">Início</a></li>
+          <li><a href="../#produtos"      class="rodape__link">Produtos</a></li>
+          <li><a href="../#categorias"    class="rodape__link">Categorias</a></li>
+          <li><a href="../games/"         class="rodape__link">Games</a></li>
+          <li><a href="../computadores/"  class="rodape__link">Computadores</a></li>
+          <li><a href="../celular/"       class="rodape__link">Celulares</a></li>
+        </ul>
+      </div>
+      <div class="rodape__coluna">
+        <div class="rodape__titulo">Siga-nos</div>
+        <div class="rodape__redes">
+          <a href="#" class="rodape__rede">Facebook</a>
+          <a href="#" class="rodape__rede">X (Twitter)</a>
+          <a href="#" class="rodape__rede">Instagram</a>
+          <a href="#" class="rodape__rede">LinkedIn</a>
+          <a href="#" class="rodape__rede">YouTube</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.8rem; color: #555; line-height: 1.8;">
+          contato@technoblade.com<br>
+          (21) 99999-9999
+        </p>
+      </div>
+    </div>
+    <div class="rodape__base">
+      <span>© 2026 Technoblade. Todos os direitos reservados.</span>
+      <span>
+        <a href="../login/">Entrar</a> &nbsp;·&nbsp;
+        <a href="../cadastro/">Cadastrar-se</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="../js/busca.js"></script>
+
+</body>
+
+</html>
