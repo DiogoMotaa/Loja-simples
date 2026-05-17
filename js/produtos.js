@@ -1,8 +1,12 @@
 async function carregarProdutos() {
-  const resposta = await fetch("./BANCODEDADOS/produtos.json");
+  let resposta = await fetch("./BANCODEDADOS/Produtos.json");
 
   if (!resposta.ok) {
-    throw new Error(`Não foi possível carregar produtos.json. Status HTTP: ${resposta.status}`);
+    resposta = await fetch("../BANCODEDADOS/Produtos.json");
+  }
+
+  if (!resposta.ok) {
+    throw new Error(`Não foi possível carregar Produtos.json. Status HTTP: ${resposta.status}`);
   }
 
   const objeto = await resposta.json();

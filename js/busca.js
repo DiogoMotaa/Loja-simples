@@ -2,7 +2,11 @@ let catalogoProdutos = [];  // Variável global para armazenar dados
 
 async function carregarCatalogoProdutos() {
     try {
-        const resposta = await fetch('./BANCODEDADOS/produtos.json');
+        let resposta = await fetch('./BANCODEDADOS/Produtos.json');
+
+        if (!resposta.ok) {
+            resposta = await fetch('../BANCODEDADOS/Produtos.json');
+        }
         
         if (!resposta.ok) {
             throw new Error('Erro ao carregar JSON: ' + resposta.status);
@@ -77,7 +81,15 @@ function renderizarSugestoes(resultados) {
                 '<span class="busca__item-cat">'  + produto.categoria  + '</span>' +
             '</div>';
         item.addEventListener('click', function () {
-            window.location.href = '/produto/especificacoes.html?produto=' + produto.slug;
+            const emSubpasta = window.location.pathname.includes('/games/')
+                || window.location.pathname.includes('/celular/')
+                || window.location.pathname.includes('/computadores/')
+                || window.location.pathname.includes('/produto/')
+                || window.location.pathname.includes('/login/')
+                || window.location.pathname.includes('/cadastro/');
+
+            const baseProduto = emSubpasta ? '../produto/' : './produto/';
+            window.location.href = baseProduto + '?produto=' + encodeURIComponent(produto.slug);
         });
         listaSugests.appendChild(item);
     });
