@@ -89,7 +89,7 @@ function renderizarSugestoes(resultados) {
                 || window.location.pathname.includes('/cadastro/');
 
             const baseProduto = emSubpasta ? '../produto/' : './produto/';
-            window.location.href = baseProduto + '?produto=' + encodeURIComponent(produto.slug);
+            window.location.href = baseProduto + '?' + encodeURIComponent(produto.slug);
         });
         listaSugests.appendChild(item);
     });

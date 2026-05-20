@@ -69,3 +69,18 @@
 .botao--pequeno:hover {
   background: #fff;
 }
+
+/* Oculta setas quando o script marcar o body como mobile */
+.is-mobile .seta,
+.is-mobile .arrow,
+.is-mobile .btn-arrow,
+.is-mobile .carousel .prev,
+.is-mobile .carousel .next {
+  display: none !important;
+}
+
+/* Classe utilitária sempre funcional quando aplicada via JS */
+.hide-on-mobile {
+  display: none !important;
+}
+
