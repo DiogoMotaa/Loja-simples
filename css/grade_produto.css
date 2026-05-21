@@ -43,7 +43,7 @@
 }
 
 .cartao-produto__icone {
-  font-size: 4rem;
+  font-size: 8rem;   /*Antes era 4rem*/
 }
 
 .cartao-produto:hover .cartao-produto__icone {
